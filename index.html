@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi primera web</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/b6d1b75e30.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Palanquin&family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header 
+      class="contenedor-header"
+      id="contenedor-header">
+      <a href="index.html">
+        <i class="fa-solid fa-heart corazon"></i>
+      </a>
+      <input type="checkbox" id="check"/>
+        <label for="check" class="menu-icon">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+      <nav class="navbar">                
+        <ul class="contenedor-menu">
+          <li>
+            <a href="index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="#acerca-de">Acerca de mi</a>
+          </li>
+          <li>
+            <a href="#serv">Servicios</a>
+          </li>
+          <li>
+            <a href="#contenedor-asado">Trabajos</a>
+          </li>
+          <li>
+            <a href="#form">Contacto</a>
+          </li>          
+        </ul> 
+      </nav>
+    </header>
+
+    <main id="seccion-principal">
+      <section class="seccion-1">
+        <div 
+          class="acerca-de"
+          id="acerca-de">
+          <h2>Acerca de mí</h2>
+          <p class="parrafo1">
+            ¡Bienvenido a mi página! Aquí, aprenderás más sobre mí.
+          </p>
+          <p class="parrafo2">
+            Me llamo Angel, nací y vivo en en Campana. Me gusta el helado y
+            salir a pasear en días de sol. Me encantaría aprender a programar
+            para poder ayudar a las personas a mostrar lo que hacen.
+          </p>
+        </div>
+        <div class="acerca-imagen">
+          <img
+            class="img-avatar"
+            src="https://unavatar.io/ALIYUS_LGI"
+            alt="Aliyus"
+          />
+        </div>
+      </section>
+
+      <section class="seccion-2">
+        <!-- <img src="./img/1-2.jpg" alt="imagen de carrusel" /> -->
+        <div>
+          <video class="video" autoplay muted loop src="/video/4K Computer Codes Long Loop Half Hour.mkv"></video>
+        </div>
+        <div class="serv" id="serv">
+          <h2>Mis Servicios</h2>
+          <ul>
+            <li>
+              <p><strong>Desarrollo web Frontend</strong></p>
+              <p>Creación y diseño de la interfaz de usuario de un sitio web. Incluye la implementación de elementos visuales, como diseño, colores y tipografías, así como la funcionalidad que los usuarios experimentan directamente en su navegador.</p>
+            </li>
+            <li>
+              <p><strong>Diseño Responsive</strong></p>
+              <p>Este enfoque de diseño asegura que un sitio web se vea y funcione de manera óptima en diferentes dispositivos y tamaños de pantalla. Esto mejora la experiencia del usuario y es crucial para la optimización en motores de búsqueda.</p>
+            </li>
+            <li>
+              <p><strong>Landig Pages</strong></p>
+              <p>Páginas web diseñadas específicamente para una campaña o acción particular, con el objetivo de convertir visitantes en clientes potenciales o clientes reales. </p>
+            </li>
+            <li>
+              <p><strong>e-comerce</strong></p>
+              <p>Creación y desarrollo de tiendas en línea. Esto implica la implementación de sistemas de carrito de compras, pasarelas de pago y la presentación efectiva de productos para facilitar la experiencia de compra en línea.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section-3">
+        <div 
+          class="contenedor-asado"
+          id="contenedor-asado">
+          <article class="contenedor-article">
+            <img
+              src="https://cholilaonline.ar/wp-content/uploads/2022/01/443701_5148.jpg"
+              alt="asado argentino"
+            />
+            <h2>Asado Argentino</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos
+              quibusdam aut voluptatem nam? Dolor ullam possimus sint
+              reprehenderit rem eaque, consectetur reiciendis necessitatibus
+              quaerat esse tempora repellendus repellat. Veritatis, culpa.
+            </p>
+            <button class="article-button">Leer más</button>
+          </article>
+          <article class="contenedor-article">
+            <img
+              src="https://cholilaonline.ar/wp-content/uploads/2022/01/443701_5148.jpg"
+              alt="asado argentino"
+            />
+            <h2>Asado Argentino 2</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis
+              totam dolore illo reiciendis, inventore quas facere? Dolore velit
+              pariatur ab saepe necessitatibus temporibus tempore delectus,
+              quos, facilis id vero et?
+            </p>
+            <button class="article-button">Leer más</button>
+          </article>
+          <article class="contenedor-article">
+            <img
+              src="https://cholilaonline.ar/wp-content/uploads/2022/01/443701_5148.jpg"
+              alt="asado argentino"
+            />
+            <h2>Asado Argentino 3</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate doloribus, et molestias quaerat sed autem. Debitis
+              unde, numquam eligendi eos aspernatur laborum aliquid adipisci quo
+              consectetur obcaecati natus vero enim!
+            </p>
+            <button class="article-button">Leer más</button>
+          </article>
+        </div>
+      </section>
+
+      <form 
+        action="/"
+        method="get"
+        class="form-container"
+        id="form"
+        >
+        <fieldset class="form-content">
+          <legend>Contacatame!</legend>
+          <label class="label">
+            Nombre:
+            <input 
+              type="text" 
+              id="name" 
+              name="name">
+          </label>
+          <label class="label">
+            Email:
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              placeholder="correo@correo.com">
+          </label>
+          <label class="label">
+            Mensaje:
+            <textarea 
+              id="message" 
+              name="mensaje">
+            </textarea>
+          </label>
+          <div class="submit-buttom">
+            <button>Enviar</button>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+    <footer class="contenedor-footer">
+      <h3>Mis redes</h3>
+      <nav>
+        <ul class="lista-footer">
+          <li>
+            <a
+              target="_blank"
+              href="https://www.facebook.com/aliyuslgi"> 
+              Facebook 
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/aliyus.lgi/"> 
+              Instagram 
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/angel-honorio-rodriguez-b74076b5/"
+            >
+              Linkedin
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank" 
+              href="https://twitter.com/ALIYUS_LGI"> 
+              X 
+            </a>
+          </li>
+        </ul>
+        <a href="#contenedor-header">
+          <i class="fa-solid fa-jet-fighter-up to-menu"></i>
+        </a>
+      </nav>
+    </footer>
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>
